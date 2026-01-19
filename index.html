@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資訊安全演練通知</title>
+    <meta name="description" content="資訊安全演練頁面">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .warning-box {
+            background: #fff5f5;
+            border-left: 4px solid #f56565;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .warning-box p {
+            color: #742a2a;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background: #ebf8ff;
+            border-left: 4px solid #4299e1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            color: #2c5282;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-box li {
+            color: #2c5282;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .info-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4299e1;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+            color: #4a5568;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .shield {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <span class="shield">🛡️</span>
+        </div>
+        
+        <h1>這是例行性資訊安全演練</h1>
+        
+        <div class="warning-box">
+            <p><strong>請注意：</strong></p>
+            <p>雖然您輸入的帳號密碼並沒有被記錄下來，但如果這是真實的詐騙，後果可能會非常嚴重！</p>
+        </div>
+
+        <div class="info-box">
+            <h3>📌 防範建議</h3>
+            <ul>
+                <li>特別注意防範這類信件或網站連結</li>
+                <li>對來自通訊軟體的連結保持警覺</li>
+                <li>謹慎處理簡訊上的連結及檔案</li>
+                <li>不要輕易點擊來源不明的連結</li>
+                <li>定期更新密碼，使用強密碼</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            資訊安全人人有責 🔐
+        </div>
+    </div>
+</body>
+</html>
